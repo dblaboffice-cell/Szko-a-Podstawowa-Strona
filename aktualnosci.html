@@ -2,12 +2,90 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Strona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualności - Szkoła Podstawowa im. Królowej Jadwigi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Tu będzie treść strony</h1>
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>Szkoła Podstawowa im. Królowej Jadwigi</span>
+        <span>ul. Smoleńsk 14, 31-112 Kraków</span>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo-box">
+            <div class="logo-circle">SP</div>
+            <div>
+                <h1>Szkoła Podstawowa<br>im. Królowej Jadwigi</h1>
+                <p>Wiedza, rozwój i bezpieczeństwo ucznia</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Strona główna</a>
+            <a href="aktualnosci.html" class="active">Aktualności</a>
+            <a href="onas.html">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container main-content">
+    <section class="content-section">
+        <h2>Aktualności</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Warsztaty historyczne w Krakowie</h3>
+                <p>
+                    W ramach edukacji kulturowej i historycznej uczniowie biorą udział
+                    w warsztatach terenowych oraz lekcjach muzealnych.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Zebrania i konsultacje z rodzicami</h3>
+                <p>
+                    Szkoła regularnie organizuje spotkania, konsultacje i działania
+                    wspierające współpracę z rodzicami.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Aktywność fizyczna i zdrowy styl życia</h3>
+                <p>
+                    Promujemy ruch na świeżym powietrzu, zajęcia sportowe oraz edukację zdrowotną
+                    jako ważną część codziennego życia szkoły.
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>

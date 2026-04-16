@@ -118,12 +118,30 @@ body {
 /* ====== HERO ====== */
 
 .hero {
+    position: relative;
     height: 400px;
     background-size: cover;
     background-position: center;
     animation: slideshow 16s infinite;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content,
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
 @keyframes slideshow {
     0% {
         background-image: url("images/rynek.jpg");
@@ -136,6 +154,9 @@ body {
     }
     75% {
         background-image: url("images/wisla.jpg");
+    }
+    100% {
+        background-image: url("images/rynek2.jpg");
     }
 }
 

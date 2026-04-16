@@ -2,12 +2,117 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Strona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Szkoła Podstawowa im. Królowej Jadwigi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Tu będzie treść strony</h1>
+<!-- GÓRNY PASEK -->
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>Szkoła Podstawowa im. Królowej Jadwigi</span>
+        <span>ul. Smoleńsk 14, 31-112 Kraków</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo-box">
+            <div class="logo-circle">SP</div>
+            <div>
+                <h1>Szkoła Podstawowa<br>im. Królowej Jadwigi</h1>
+                <p>Wiedza, rozwój i bezpieczeństwo ucznia</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MENU -->
+<nav class="main-nav">
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Strona główna</a>
+            <a href="aktualnosci.html">Aktualności</a>
+            <a href="onas.html" class="active">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<!-- TREŚĆ -->
+<main class="container main-content">
+
+    <section class="content-section">
+        <h2>Dlaczego warto wybrać naszą szkołę?</h2>
+
+        <div class="panel">
+            <h3>Bo wiemy, jaka powinna być współczesna szkoła</h3>
+
+            <p>
+                Doskonale rozumiemy, jakiej szkoły oczekują uczniowie, rodzice oraz instytucje,
+                w których nasi absolwenci będą w przyszłości realizować swoje plany.
+            </p>
+
+            <p>
+                Przede wszystkim wspieramy naszych uczniów w osiąganiu ich osobistych celów.
+                Pomagamy im odnaleźć się w nowym środowisku, rozwijać pewność siebie
+                i budować własną drogę edukacyjną.
+            </p>
+
+            <h3>Jak wspieramy uczniów?</h3>
+            <ul>
+                <li>eliminujemy stres i wspieramy dobre samopoczucie</li>
+                <li>uczymy systematyczności i odpowiedzialności</li>
+                <li>pomagamy nadrabiać zaległości</li>
+                <li>rozwijamy indywidualne zdolności i pasje</li>
+                <li>kształtujemy umiejętność komunikacji</li>
+                <li>uczymy wystąpień publicznych</li>
+                <li>wspieramy planowanie dalszej edukacji</li>
+            </ul>
+
+            <h3>Nasza filozofia</h3>
+            <p>
+                Wierzymy, że nie ma uczniów słabych – są tylko tacy,
+                którzy potrzebują odpowiedniego wsparcia, motywacji i zrozumienia.
+            </p>
+
+            <p>
+                Naszym celem jest pomóc każdemu uczniowi osiągnąć sukces –
+                niezależnie od punktu startowego. Sukces ucznia jest naszym sukcesem.
+            </p>
+
+            <h3>Dołącz do nas</h3>
+            <p>
+                Z nami nauka może być źródłem radości, a szkoła miejscem,
+                w którym rozwijasz swoje możliwości i budujesz poczucie własnej wartości.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- STOPKA -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
+    </div>
+</footer>
+
+<!-- MENU MOBILNE -->
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>
