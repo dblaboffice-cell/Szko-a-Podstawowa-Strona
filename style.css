@@ -61,9 +61,8 @@ body {
 /* ====== MENU ====== */
 
 .main-nav {
-    background: #123f6b;
-    position: sticky;
-    top: 0;
+    background: linear-gradient(to right, #0d3f73, #1d5f9f);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 .menu-toggle {
@@ -81,21 +80,42 @@ body {
 
 .main-nav a {
     color: white;
+    padding: 15px 20px;
     text-decoration: none;
-    padding: 15px;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     position: relative;
     transition: 0.3s;
 }
 
 .main-nav a:hover {
-    background: #1d5f9f;
+    color: #cce0ff;
+}
+
+/* eleganckie podkreślenie */
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.main-nav a:hover::after {
+    width: 60%;
 }
 
 /* aktywna zakładka */
 .main-nav a.active {
-    background: white;
-    color: #0d3f73;
+    color: #ffffff;
+}
+
+.main-nav a.active::after {
+    width: 70%;
 }
 
 /* animowana kreska */
@@ -210,15 +230,15 @@ body {
 
 .card {
     background: white;
+    border-radius: 15px;
     padding: 20px;
-    flex: 1;
-    min-width: 250px;
-    border-radius: 10px;
     transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .card-link {
