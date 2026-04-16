@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil absolwenta - Szkoła Podstawowa im. Królowej Jadwigi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>Szkoła Podstawowa im. Królowej Jadwigi</span>
+        <span>ul. Smoleńsk 14, 31-112 Kraków</span>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo-box">
+            <div class="logo-circle">SP</div>
+            <div>
+                <h1>Szkoła Podstawowa<br>im. Królowej Jadwigi</h1>
+                <p>Wiedza, rozwój i bezpieczeństwo ucznia</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Strona główna</a>
+            <a href="aktualnosci.html">Aktualności</a>
+            <a href="onas.html">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="absolwent.html" class="active">Profil absolwenta</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container main-content">
+
+    <section class="content-section">
+        <h2>Profil absolwenta</h2>
+
+        <div class="panel">
+
+            <h3>Postawa i cechy osobiste</h3>
+            <ul>
+                <li>odpowiedzialność, systematyczność i pracowitość</li>
+                <li>rzetelność i wytrwałość w działaniu</li>
+                <li>szacunek wobec innych i kultura osobista</li>
+            </ul>
+
+            <h3>Rozwój intelektualny</h3>
+            <ul>
+                <li>posiadanie ugruntowanej wiedzy ogólnej</li>
+                <li>umiejętność analizy i łączenia faktów</li>
+                <li>samodzielne rozwiązywanie problemów</li>
+                <li>wykorzystywanie wiedzy w praktyce</li>
+            </ul>
+
+            <h3>Dojrzałość emocjonalna</h3>
+            <ul>
+                <li>rozumienie i kontrolowanie emocji</li>
+                <li>umiejętność współpracy w grupie</li>
+                <li>rozwiązywanie konfliktów w sposób konstruktywny</li>
+            </ul>
+
+            <h3>Zdrowy styl życia</h3>
+            <ul>
+                <li>aktywność fizyczna jako element codzienności</li>
+                <li>dbałość o zdrowie fizyczne i psychiczne</li>
+                <li>świadomość konsekwencji zachowań ryzykownych</li>
+            </ul>
+
+            <h3>Świadomość kulturowa</h3>
+            <ul>
+                <li>znajomość historii i dziedzictwa Krakowa</li>
+                <li>rozumienie znaczenia kultury i tradycji</li>
+                <li>świadomość swojej roli jako młodego obywatela</li>
+            </ul>
+
+            <p>
+                Absolwent naszej szkoły to osoba przygotowana do dalszej edukacji,
+                odpowiedzialnego życia społecznego oraz świadomego podejmowania decyzji.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

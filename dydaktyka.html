@@ -2,12 +2,93 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Strona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dydaktyka - Szkoła Podstawowa im. Królowej Jadwigi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Tu będzie treść strony</h1>
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>Szkoła Podstawowa im. Królowej Jadwigi</span>
+        <span>ul. Smoleńsk 14, 31-112 Kraków</span>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo-box">
+            <div class="logo-circle">SP</div>
+            <div>
+                <h1>Szkoła Podstawowa<br>im. Królowej Jadwigi</h1>
+                <p>Wiedza, rozwój i bezpieczeństwo ucznia</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Strona główna</a>
+            <a href="aktualnosci.html">Aktualności</a>
+            <a href="onas.html">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html" class="active">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="absolwent.html">Profil absolwenta</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container main-content">
+    <section class="content-section">
+        <h2>Dydaktyka</h2>
+        <div class="panel">
+            <p>
+                Proces dydaktyczny opiera się na sprawdzonych metodach nauczania, systematycznej pracy
+                z materiałem, rozwijaniu samodzielnego myślenia oraz umiejętności logicznych i analitycznych.
+            </p>
+
+            <h3>Nasze podejście</h3>
+            <ul>
+                <li>rzetelna praca z materiałem naukowym,</li>
+                <li>wzmacnianie samodzielności ucznia,</li>
+                <li>łączenie wiedzy z praktyką,</li>
+                <li>interdyscyplinarne podejście do historii, literatury, sztuki i geografii,</li>
+                <li>rozwijanie ciekawości poznawczej poprzez kontakt z kulturą.</li>
+            </ul>
+
+            <h3>Cyfrowa higiena</h3>
+            <p>
+                Wspieramy koncentrację uczniów, ograniczając korzystanie z urządzeń cyfrowych,
+                które nie służą bezpośrednio procesowi dydaktycznemu.
+            </p>
+
+            <h3>Uczeń po naszej szkole</h3>
+            <p>
+                Chcemy, by absolwent był odpowiedzialny, pracowity, samodzielny,
+                potrafił analizować fakty, rozwiązywać problemy i wykorzystywać wiedzę w praktyce.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>
