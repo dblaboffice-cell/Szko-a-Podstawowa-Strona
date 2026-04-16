@@ -118,10 +118,25 @@ body {
 /* ====== HERO ====== */
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("https://picsum.photos/1200/400");
-    color: white;
-    padding: 60px 0;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 16s infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url("images/rynek.jpg");
+    }
+    25% {
+        background-image: url("images/wawel.jpg");
+    }
+    50% {
+        background-image: url("images/mariacki.jpg");
+    }
+    75% {
+        background-image: url("images/wisla.jpg");
+    }
 }
 
 .hero-text {
