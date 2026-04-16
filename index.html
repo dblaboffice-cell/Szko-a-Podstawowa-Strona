@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szkoła Podstawowa im. Królowej Jadwigi</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -28,14 +29,19 @@
 </header>
 
 <nav class="main-nav">
-    <div class="container nav-links">
-        <a href="#aktualnosci">Aktualności</a>
-        <a href="#onas">O nas</a>
-        <a href="#rekrutacja">Rekrutacja</a>
-        <a href="#dydaktyka">Dydaktyka</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#info">Info</a>
-        <a href="#kontakt">Kontakt</a>
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Strona główna</a>
+            <a href="aktualnosci.html">Aktualności</a>
+            <a href="onas.html">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
     </div>
 </nav>
 
@@ -44,105 +50,106 @@
         <div class="hero-text">
             <h2>Witamy na stronie naszej szkoły</h2>
             <p>
-                Nowoczesna szkoła podstawowa w centrum Krakowa.
-                Wspieramy rozwój uczniów, dbamy o dobrą atmosferę i wysoki poziom nauczania.
+                Nasza szkoła to miejsce przyjazne uczniom, rodzicom i nauczycielom.
+                Dbamy o wysoki poziom nauczania, rozwój talentów oraz bezpieczną,
+                życzliwą atmosferę każdego dnia.
             </p>
-            <a href="#rekrutacja" class="btn">Zobacz rekrutację</a>
+            <a href="rekrutacja.html" class="btn">Zobacz rekrutację</a>
         </div>
     </div>
 </section>
 
 <main class="container main-content">
 
-    <section id="aktualnosci" class="content-section">
-        <h2>Aktualności</h2>
-        <div class="cards">
-            <article class="card">
-                <h3>Rozpoczęcie roku szkolnego</h3>
-                <p>Uroczyste rozpoczęcie roku szkolnego odbędzie się 1 września o godzinie 9:00.</p>
-            </article>
-            <article class="card">
-                <h3>Zebranie z rodzicami</h3>
-                <p>Najbliższe zebranie z rodzicami odbędzie się w czwartek o godz. 17:00.</p>
-            </article>
-            <article class="card">
-                <h3>Konkurs szkolny</h3>
-                <p>Zapraszamy uczniów do udziału w konkursie plastycznym „Moja szkoła marzeń”.</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="onas" class="content-section">
-        <h2>O nas</h2>
+    <section class="content-section intro-section">
+        <h2>O szkole</h2>
         <div class="panel">
             <p>
-                Szkoła Podstawowa im. Królowej Jadwigi to miejsce przyjazne uczniom,
-                nastawione na rozwój, bezpieczeństwo i budowanie pasji.
-                Oferujemy nowoczesne podejście do edukacji, ciekawe zajęcia dodatkowe
-                oraz wsparcie wychowawcze i pedagogiczne.
+                Szkoła Podstawowa im. Królowej Jadwigi to nowoczesna placówka edukacyjna,
+                która łączy tradycję z nowoczesnym podejściem do nauczania. Oferujemy
+                wsparcie dydaktyczne, ciekawe zajęcia dodatkowe oraz rozwój zainteresowań
+                uczniów na każdym etapie edukacji.
             </p>
         </div>
     </section>
 
-    <section id="rekrutacja" class="content-section">
-        <h2>Rekrutacja</h2>
-        <div class="panel">
-            <ul>
-                <li>Zapisy do klasy pierwszej prowadzone są w sekretariacie szkoły.</li>
-                <li>Wymagane dokumenty: karta zgłoszenia, dane ucznia i rodzica.</li>
-                <li>Szczegółowy harmonogram rekrutacji publikowany jest w aktualnościach.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="dydaktyka" class="content-section">
-        <h2>Dydaktyka</h2>
+    <section class="content-section">
+        <h2>Szybki dostęp</h2>
         <div class="cards">
             <article class="card">
-                <h3>Języki obce</h3>
-                <p>Prowadzimy naukę języków obcych z naciskiem na komunikację i praktykę.</p>
+                <h3>Aktualności</h3>
+                <p>Najważniejsze informacje o wydarzeniach szkolnych, konkursach i terminach.</p>
+                <a href="aktualnosci.html" class="card-link">Przejdź do aktualności</a>
             </article>
+
             <article class="card">
-                <h3>Zajęcia dodatkowe</h3>
-                <p>Uczniowie mogą rozwijać zainteresowania podczas kół przedmiotowych i artystycznych.</p>
+                <h3>Rekrutacja</h3>
+                <p>Sprawdź zasady zapisów, terminy oraz wymagane dokumenty dla kandydatów.</p>
+                <a href="rekrutacja.html" class="card-link">Przejdź do rekrutacji</a>
             </article>
+
+            <article class="card">
+                <h3>Dydaktyka</h3>
+                <p>Poznaj ofertę edukacyjną, zajęcia dodatkowe oraz działania wspierające uczniów.</p>
+                <a href="dydaktyka.html" class="card-link">Przejdź do dydaktyki</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Dlaczego warto wybrać naszą szkołę?</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Bezpieczne środowisko</h3>
+                <p>Tworzymy miejsce, w którym uczniowie czują się dobrze i rozwijają z pewnością siebie.</p>
+            </article>
+
+            <article class="card">
+                <h3>Nowoczesne nauczanie</h3>
+                <p>Korzystamy z aktywnych metod pracy, projektów edukacyjnych i zajęć rozwijających pasje.</p>
+            </article>
+
             <article class="card">
                 <h3>Wsparcie ucznia</h3>
-                <p>Zapewniamy pomoc pedagoga, psychologa oraz indywidualne podejście do ucznia.</p>
+                <p>Zapewniamy opiekę pedagogiczną, psychologiczną oraz indywidualne podejście do potrzeb dziecka.</p>
             </article>
         </div>
     </section>
 
-    <section id="galeria" class="content-section">
-        <h2>Galeria</h2>
-        <div class="gallery">
-            <div class="gallery-item">Zdjęcie 1</div>
-            <div class="gallery-item">Zdjęcie 2</div>
-            <div class="gallery-item">Zdjęcie 3</div>
-            <div class="gallery-item">Zdjęcie 4</div>
+    <section class="content-section">
+        <h2>Galeria szkoły</h2>
+        <div class="gallery-preview">
+            <div class="gallery-box">Zdjęcie szkoły</div>
+            <div class="gallery-box">Wydarzenia</div>
+            <div class="gallery-box">Uczniowie</div>
+            <div class="gallery-box">Zajęcia</div>
+        </div>
+        <div class="more-button-box">
+            <a href="galeria.html" class="btn">Zobacz galerię</a>
         </div>
     </section>
 
-    <section id="info" class="content-section">
-        <h2>Info</h2>
-        <div class="panel">
-            <p><strong>Godziny pracy sekretariatu:</strong> 8:00 – 15:00</p>
-            <p><strong>Adres szkoły:</strong> ul. Smoleńsk 14, 31-112 Kraków</p>
-            <p><strong>Dokumenty i komunikaty:</strong> informacje organizacyjne publikowane są na stronie szkoły.</p>
-        </div>
-    </section>
-
-    <section id="kontakt" class="content-section">
-        <h2>Kontakt</h2>
+    <section class="content-section">
+        <h2>Informacje kontaktowe</h2>
         <div class="contact-box">
             <div>
-                <p><strong>Szkoła Podstawowa im. Królowej Jadwigi</strong></p>
+                <p><strong>Adres:</strong></p>
                 <p>ul. Smoleńsk 14<br>31-112 Kraków</p>
             </div>
+
             <div>
-                <p><strong>Telefon:</strong> 12 422 92 02</p>
-                <p><strong>E-mail:</strong> sekretariat@sp-jadwiga.pl</p>
+                <p><strong>Telefon:</strong></p>
+                <p>12 422 92 02</p>
             </div>
+
+            <div>
+                <p><strong>E-mail:</strong></p>
+                <p>sekretariat@sp-jadwiga.pl</p>
+            </div>
+        </div>
+
+        <div class="more-button-box">
+            <a href="kontakt.html" class="btn">Przejdź do kontaktu</a>
         </div>
     </section>
 
@@ -150,9 +157,16 @@
 
 <footer class="footer">
     <div class="container">
-        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków, ul. Smoleńsk 14</p>
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
     </div>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
 
 </body>
 </html>
