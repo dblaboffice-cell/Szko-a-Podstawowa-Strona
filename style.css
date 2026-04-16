@@ -159,10 +159,8 @@ body {
 
 .hero-content,
 .hero-text {
-    background: rgba(0,0,0,0.4);
-    padding: 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 2;
 }
 @keyframes slideshow {
     0% {
