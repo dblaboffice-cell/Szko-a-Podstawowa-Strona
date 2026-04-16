@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła Podstawowa im. Królowej Jadwigi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span>Szkoła Podstawowa im. Królowej Jadwigi</span>
+        <span>ul. Smoleńsk 14, 31-112 Kraków</span>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo-box">
+            <div class="logo-circle">SP</div>
+            <div>
+                <h1>Szkoła Podstawowa<br>im. Królowej Jadwigi</h1>
+                <p>Wiedza, rozwój i bezpieczeństwo ucznia</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Strona główna</a>
+            <a href="aktualnosci.html">Aktualności</a>
+            <a href="onas.html">O nas</a>
+            <a href="rekrutacja.html">Rekrutacja</a>
+            <a href="dydaktyka.html">Dydaktyka</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="info.html">Info</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h2>Witamy na stronie naszej szkoły</h2>
+            <p>
+                Nasza szkoła to miejsce przyjazne uczniom, rodzicom i nauczycielom.
+                Dbamy o wysoki poziom nauczania, rozwój talentów oraz bezpieczną,
+                życzliwą atmosferę każdego dnia.
+            </p>
+            <a href="rekrutacja.html" class="btn">Zobacz rekrutację</a>
+        </div>
+    </div>
+</section>
+
+<main class="container main-content">
+
+    <section class="content-section intro-section">
+        <h2>O szkole</h2>
+        <div class="panel">
+            <p>
+                Szkoła Podstawowa im. Królowej Jadwigi to nowoczesna placówka edukacyjna,
+                która łączy tradycję z nowoczesnym podejściem do nauczania. Oferujemy
+                wsparcie dydaktyczne, ciekawe zajęcia dodatkowe oraz rozwój zainteresowań
+                uczniów na każdym etapie edukacji.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Szybki dostęp</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Aktualności</h3>
+                <p>Najważniejsze informacje o wydarzeniach szkolnych, konkursach i terminach.</p>
+                <a href="aktualnosci.html" class="card-link">Przejdź do aktualności</a>
+            </article>
+
+            <article class="card">
+                <h3>Rekrutacja</h3>
+                <p>Sprawdź zasady zapisów, terminy oraz wymagane dokumenty dla kandydatów.</p>
+                <a href="rekrutacja.html" class="card-link">Przejdź do rekrutacji</a>
+            </article>
+
+            <article class="card">
+                <h3>Dydaktyka</h3>
+                <p>Poznaj ofertę edukacyjną, zajęcia dodatkowe oraz działania wspierające uczniów.</p>
+                <a href="dydaktyka.html" class="card-link">Przejdź do dydaktyki</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Dlaczego warto wybrać naszą szkołę?</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Bezpieczne środowisko</h3>
+                <p>Tworzymy miejsce, w którym uczniowie czują się dobrze i rozwijają z pewnością siebie.</p>
+            </article>
+
+            <article class="card">
+                <h3>Nowoczesne nauczanie</h3>
+                <p>Korzystamy z aktywnych metod pracy, projektów edukacyjnych i zajęć rozwijających pasje.</p>
+            </article>
+
+            <article class="card">
+                <h3>Wsparcie ucznia</h3>
+                <p>Zapewniamy opiekę pedagogiczną, psychologiczną oraz indywidualne podejście do potrzeb dziecka.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Galeria szkoły</h2>
+        <div class="gallery-preview">
+            <div class="gallery-box">Zdjęcie szkoły</div>
+            <div class="gallery-box">Wydarzenia</div>
+            <div class="gallery-box">Uczniowie</div>
+            <div class="gallery-box">Zajęcia</div>
+        </div>
+        <div class="more-button-box">
+            <a href="galeria.html" class="btn">Zobacz galerię</a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Informacje kontaktowe</h2>
+        <div class="contact-box">
+            <div>
+                <p><strong>Adres:</strong></p>
+                <p>ul. Smoleńsk 14<br>31-112 Kraków</p>
+            </div>
+
+            <div>
+                <p><strong>Telefon:</strong></p>
+                <p>12 422 92 02</p>
+            </div>
+
+            <div>
+                <p><strong>E-mail:</strong></p>
+                <p>sekretariat@sp-jadwiga.pl</p>
+            </div>
+        </div>
+
+        <div class="more-button-box">
+            <a href="kontakt.html" class="btn">Przejdź do kontaktu</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Szkoła Podstawowa im. Królowej Jadwigi | Kraków</p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

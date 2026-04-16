@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f6fb;
+    color: #1f2d3d;
+}
+
+/* ====== UKŁAD ====== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ====== GÓRNY PASEK ====== */
+
+.top-bar {
+    background: #0b3f74;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ====== HEADER ====== */
+
+.main-header {
+    background: linear-gradient(to right, #16508d, #0d3f73);
+    color: white;
+    padding: 25px 0;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    color: #0d3f73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* ====== MENU ====== */
+
+.main-nav {
+    background: #123f6b;
+    position: sticky;
+    top: 0;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    background: #1d5f9f;
+}
+
+/* aktywna zakładka */
+.main-nav a.active {
+    background: white;
+    color: #0d3f73;
+}
+
+/* animowana kreska */
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.main-nav a:hover::after {
+    width: 60%;
+}
+
+/* ====== HERO ====== */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://picsum.photos/1200/400");
+    color: white;
+    padding: 60px 0;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #2b78c5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #1f63a7;
+}
+
+/* ====== SEKCJE ====== */
+
+.main-content {
+    padding: 40px 0;
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    color: #0d3f73;
+    margin-bottom: 10px;
+}
+
+/* panel */
+.panel {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ====== KARTY ====== */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2b78c5;
+    font-weight: bold;
+}
+
+/* ====== GALERIA ====== */
+
+.gallery-preview {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-box {
+    flex: 1;
+    min-width: 120px;
+    height: 100px;
+    background: #cce0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-button-box {
+    margin-top: 15px;
+}
+
+/* ====== KONTAKT ====== */
+
+.contact-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ====== STOPKA ====== */
+
+.footer {
+    background: #082b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ====== RESPONSYWNOŚĆ ====== */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .top-bar-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
